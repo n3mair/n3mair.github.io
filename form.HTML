@@ -1,0 +1,123 @@
+<HTML>
+
+
+<head>
+
+ <link rel="stylesheet" href="formcss.css">
+</head>
+
+
+
+<body>
+  <form>
+        <img class="first" src="IMG_3215.PNG" width="500px" height="500px">
+
+<h2> Recommended About Your Gift </h2>
+
+<!--
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Friends
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Eid
+  </label>
+</div>
+<div class="form-check disabled">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+  <label class="form-check-label" for="exampleRadios3">
+    Graduation
+  </label>
+</div>
+<div class="form-check disabled">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+  <label class="form-check-label" for="exampleRadios3">
+    Birthday
+  </label>
+</div>
+<div class="form-check disabled">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+  <label class="form-check-label" for="exampleRadios3">
+    Wedding
+  </label>
+</div>
+
+
+    <br> <button type="button" class="btn btn-outline-secondary" > submit </button >
+
+
+
+</div> -->
+
+
+<input type="radio" name="button" value="option 1" data-href="friends.html" checked />Friends<br>
+
+<input type="radio" name="button" value="option 2" data-href="eid.html"  checked />   Eid <br>
+
+<input type="radio" name="op3" value="option 3"/>   Graduation <br>
+
+<input type="radio" name="op4" value="option 4"/>   Birthday <br>
+
+
+<input type="submit" value="Continue" id="btnFormSubmit">
+
+
+<script>
+
+var submit = document.getElementById('btnFormSubmit');
+submit.addEventListener('click', submitForm);
+
+function submitForm(event){
+event.preventDefault();
+event.stopPropagation();
+
+var href = '',
+inputs = this.parentNode.getElementsByTagName('input')
+    for(var i=0;i<inputs.length;i++){
+         if(inputs[i].getAttribute('name') == 'button' && inputs[i].checked){
+             href = inputs[i].getAttribute('data-href');
+             window.location = href;
+         }
+    }
+}
+
+// $("#submit").on("click", function(){
+//   console.log("YESS");
+//     var radioSelected = $("input[name=op1]").val();
+//     if(radioSelected == "option 1"){
+//
+//      document.getElementById('card1').img.style.visibility = (visible ? 'visible' : 'hidden');
+//      window.location.href = "card.html";
+//     }
+//
+//     // else if(radioSelected == "option 2"){
+//     //
+//     //  document.getElementById('card2').src='';
+//     //
+//     // }
+//     //
+//     // else if(radioSelected == "option 3"){
+//     //
+//     //  document.getElementById('card3').src='';
+//     //
+//     // }
+//     //
+//     // else (radioSelected == "option 4"){
+//     //
+//     //   document.getElementById('card4').src='';
+//     //
+//     // }
+//
+//
+//
+// }); </script>
+
+</form>
+</body>
+
+
+</HTML>

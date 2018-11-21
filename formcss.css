@@ -1,0 +1,24 @@
+
+
+body {
+    font-family: Arial, sans-serif color:#e60073;
+    position:relative;
+    background:#ffff;
+    height:100%;
+    padding:40px 30%;
+    margin:0;
+
+}
+ button{
+   font-family: Arial, sans-serif,;
+   font-size: 13px;
+   background: #fff ;
+   margin: 50px;
+   width: 100px;
+   height: 20px;
+   color:#e60073;
+
+
+
+
+}
